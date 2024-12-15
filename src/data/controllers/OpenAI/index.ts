@@ -10,7 +10,7 @@ import { GenGamesPrompt } from "./prompts";
  * @param req - Contém o PDF em base64, o tipo de arquivo e o tamanho da avaliação.
  * @param res - Retorna a avaliação gerada no formato JSON.
  */
-export const GenerateAssessment = async (req: Request, res: Response) => {
+export const GenerateGame = async (req: Request, res: Response) => {
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY ?? "" });
 
   try {
